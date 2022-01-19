@@ -7,13 +7,12 @@ set -e
 npm run build
 
 # 进入生成的文件夹
-cd docs/.vuepress/dist
+cd ../docs/.vuepress/dist
 
 git init
 git add -A
 git commit -m 'deploy'
-
 # 如果发布到 https://.github.io/
-git push -f git@github.com:lizhiyanghxn/lizhiyanghxn.github.io.git main:gh-pages
+git push -f https://github.com/lizhiyanghxn/lizhiyanghxn.github.io.git master:gh-pages
 
 cd -
