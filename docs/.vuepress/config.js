@@ -12,6 +12,9 @@ module.exports = {
     },
   },
 
+  // 路径名为 "/<REPO>/"
+  base: '/learn-typescript/',
+
   // 使用的主题
   theme: 'meteorlxy',
 
